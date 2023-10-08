@@ -15,9 +15,7 @@ public class Calculadora {
    public Integer multlipicacion(Integer numero1, Integer numero2){
       return numero1 * numero2;
    }
-   public Integer division(Integer numero1, Integer numero2){
-      return numero1 / numero2;
-   }
+   public Integer division(Integer numero1, Integer numero2){return numero1 / numero2;}
 
 
 }

@@ -38,7 +38,7 @@ public class main_calculadora{
 
                     if (resultado < 0){
                         System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado >= 0 && resultado < 10000){
+                    }else if(resultado == 0 || resultado < 10000){
                         System.out.println("Resultado dentro de los limites");
                     }else {System.out.println("Error, resultado muy grande");}
 
@@ -51,7 +51,7 @@ public class main_calculadora{
 
                     if (resultado < 0){
                         System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado >= 0 && resultado < 10000){
+                    }else if(resultado == 0 || resultado < 10000){
                         System.out.println("Resultado dentro de los limites");
                     }else {System.out.println("Error, resultado muy grande");}
 
@@ -64,7 +64,7 @@ public class main_calculadora{
 
                     if (resultado < 0){
                         System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado >= 0 && resultado < 10000){
+                    }else if(resultado == 0 || resultado < 10000){
                         System.out.println("Resultado dentro de los limites");
                     }else {System.out.println("Error, resultado muy grande");}
 
@@ -72,12 +72,21 @@ public class main_calculadora{
                     break;
 
                 case "/":
+
+                    if (numero_2 == 0){ System.out.println("No se puede dividir por cero");
+
+                        contador++;
+                        break;
+
+
+                    }
                     resultado = calculadora.division(numero_1, numero_2);
                     System.out.println("DIVISION: " + resultado);
 
+
                     if (resultado < 0){
                         System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado >= 0 && resultado < 10000){
+                    }else if(resultado == 0 || resultado < 10000){
                         System.out.println("Resultado dentro de los limites");
                     }else {System.out.println("Error, resultado muy grande");}
 
@@ -88,11 +97,6 @@ public class main_calculadora{
                     System.out.println("Operacion no valida");
 
             }
-
-
-
-
-
         }while (contador <= 5);
 
 
