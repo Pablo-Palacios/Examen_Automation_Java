@@ -16,7 +16,7 @@ public class main_calculadora{
 
         String operacion;
 
-        Integer resultado;
+        Integer resultado = 0;
 
 
         Integer contador = 1;
@@ -34,39 +34,24 @@ public class main_calculadora{
             switch (operacion){
                 case "+":
                     resultado = calculadora.suma(numero_1,numero_2);
-                    System.out.println("SUMA: " + resultado);
+                    System.out.println(" Suma exitosa");
 
-                    if (resultado < 0){
-                        System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado == 0 || resultado < 10000){
-                        System.out.println("Resultado dentro de los limites");
-                    }else {System.out.println("Error, resultado muy grande");}
 
                     contador++;
                     break;
 
                 case "-":
                     resultado = calculadora.resta(numero_1, numero_2);
-                    System.out.println("RESTA: " + resultado);
+                    System.out.println(" Resta exitosa");
 
-                    if (resultado < 0){
-                        System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado == 0 || resultado < 10000){
-                        System.out.println("Resultado dentro de los limites");
-                    }else {System.out.println("Error, resultado muy grande");}
 
                     contador++;
                     break;
 
                 case "*":
                     resultado = calculadora.multlipicacion(numero_1, numero_2);
-                    System.out.println("MULTLI: " + resultado);
+                    System.out.println(" Multiplicacion exitosa");
 
-                    if (resultado < 0){
-                        System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado == 0 || resultado < 10000){
-                        System.out.println("Resultado dentro de los limites");
-                    }else {System.out.println("Error, resultado muy grande");}
 
                     contador++;
                     break;
@@ -81,22 +66,34 @@ public class main_calculadora{
 
                     }
                     resultado = calculadora.division(numero_1, numero_2);
-                    System.out.println("DIVISION: " + resultado);
+                    System.out.println(" Division exitosa");
 
 
-                    if (resultado < 0){
-                        System.out.println("Tene cuidado, el resultado es negativo");
-                    }else if(resultado == 0 || resultado < 10000){
-                        System.out.println("Resultado dentro de los limites");
-                    }else {System.out.println("Error, resultado muy grande");}
-
-                    contador++;
                     break;
 
                 default:
                     System.out.println("Operacion no valida");
 
+
+
+
+
+
+
             }
+
+            System.out.println("Resultado: " + resultado);
+            if (resultado < 0){
+                System.out.println("Tene cuidado, el resultado es negativo");
+            }else if(resultado == 0 || resultado < 10000){
+                System.out.println("Resultado dentro de los limites");
+            }else {System.out.println("Error, resultado muy grande");}
+
+            contador++;
+
+
+
+
         }while (contador <= 5);
 
 

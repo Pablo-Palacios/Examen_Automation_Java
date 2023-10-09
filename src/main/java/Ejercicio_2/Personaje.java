@@ -1,6 +1,6 @@
 package Ejercicio_2;
 
-public class Personaje {
+abstract public class Personaje {
 
     protected Integer salud;
 
@@ -16,9 +16,7 @@ public class Personaje {
         this.salud = salud;
     }
 
-    public Integer entrenar(){
-        return null;
-    }
+    abstract public Integer entrenar();
 
 
 

@@ -19,8 +19,7 @@ public class Torre extends Personaje{
 
     @Override
     public Integer entrenar() {
-        nivel = nivel + 1;
-        setNivel(nivel);
+        setNivel(nivel + 1);
         return nivel;
     }
 }

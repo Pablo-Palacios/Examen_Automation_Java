@@ -20,8 +20,7 @@ public class Espadachin extends Personaje{
 
     @Override
     public Integer entrenar() {
-        ataque = ataque + 10;
-        setAtaque(ataque);
+        setAtaque(ataque + 10);
         return this.ataque;
 
 

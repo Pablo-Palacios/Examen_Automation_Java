@@ -19,6 +19,6 @@ public class Mago extends Personaje{
 
     @Override
     public Integer entrenar() {
-        return super.entrenar();
+        return null;
     }
 }
